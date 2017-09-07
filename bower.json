@@ -1,0 +1,9 @@
+{
+  "name": "pdf",
+  "homepage": "https://github.com/JoeyFeiXue/pdf.git",
+  "description": "This is a pdf viewer",
+  "main": "web/viewer.html",
+  "dependencies": {
+      "pdfjs-dist": "^1.7.351"
+  }
+}
