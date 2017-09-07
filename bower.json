@@ -2,7 +2,7 @@
   "name": "pdf",
   "homepage": "https://github.com/JoeyFeiXue/pdf.git",
   "description": "This is a pdf viewer",
-  "main": "web/viewer.html"，
+  "main": "web/viewer.html",
   "ignore": [
     "build",
     "locale"
