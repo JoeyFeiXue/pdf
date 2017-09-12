@@ -4,7 +4,9 @@
   "description": "This is a pdf viewer",
   "main": "web/viewer.html",
   "ignore": [
-    "build",
-    "locale"
+    "node_modules",
+    "web",
+    "gulpfile.js",
+    "package.json"
   ]
 }

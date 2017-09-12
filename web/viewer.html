@@ -29,16 +29,17 @@ See https://github.com/adobe-type-tools/cmap-resources
     <title>PDF.js viewer</title>
 
 
-    <link rel="stylesheet" href="viewer.css">
-
+   <!-- <link rel="stylesheet" href="viewer.css">-->
+    <!-- inject:css -->
+    <!-- endinject -->
 
 
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.properties">
-<script src="../build/pdf.js"></script>
+<!--<script src="build/pdf.js"></script>
 
 
-    <script src="viewer.js"></script>
+    <script src="viewer.js"></script>-->
 
   </head>
 
@@ -354,6 +355,8 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
+    <!-- inject:js -->
+    <!-- endinject -->
   </body>
 </html>
 
