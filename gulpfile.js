@@ -18,10 +18,10 @@ var paths = {
 
 var pipes = {};
 pipes.script = function(){
-    return gulp.src(['web/build/pdf.js', 'web/build/pdf.worker.js', 'web/debugger.js', 'viewer.js'])
+    return gulp.src(['build/pdf.worker.js', 'build/pdf.js', 'web/debugger.js', 'web/viewer.js'])
         .pipe(plugins.babel({presets: ['es2015']}))
         .pipe(sourcemaps.init())
-        .pipe(plugins.uglify())
+        .pipe(plugins.uglify({ mangle: {reserved : ['require','exports','module','window']}}))
         .pipe(plugins.concat({path: 'app.min.js', stat: {mode: 0666}}))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist'));
